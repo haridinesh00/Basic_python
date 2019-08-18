@@ -1,6 +1,6 @@
 import os
 import time
-import diceroller
+from diceroller import dice
 import guess
 import hangman
 import currencyconvertor
@@ -11,14 +11,15 @@ import minesweeper
 while True:
     os.system("clear")
     try:
-        choice = int(input(("""Enter your choice:\n1.Dice Roller\n2.Guess the number game\n3.Hangman Game\n4.Currency convertor\n5.Random Password Generator\n6.Tic Tac Toe\n7.Minesweeper""")))
+        choice = int(input(("""Enter your choice:\n1.Dice Roller\n2.Guess the number game\n3.Hangman Game\n4.Currency convertor\n5.Random Password Generator\n6.Tic Tac Toe\n7.Minesweeper\n""")))
     except:
         print("Wrong input")
         time.sleep(0.2)
         continue
     os.system("clear")
     if choice == 1:
-        diceroller()
+        dice()
+        break
     elif choice == 2:
         guess()
     elif choice == 3:
