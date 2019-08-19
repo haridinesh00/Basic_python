@@ -4,7 +4,7 @@ from diceroller import dice
 import guess
 import hangman
 import currencyconvertor
-import passwordgenerator
+from passwordgenerator import *
 import tictactoe
 import minesweeper
 
@@ -27,7 +27,8 @@ while True:
     elif choice == 4:
         inrconvertor()
     elif choice == 5:
-        passwordgenerator()
+        generate()
+        break
     elif choice == 6:
         tictactoe()
     elif choice == 7:
